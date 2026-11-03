@@ -1,0 +1,7 @@
+PASS: empty offsets
+PASS: offset rank
+PASS: offset range
+PASS: zero divisor
+PASS: wrong element type
+PASS: small static grid
+PASS: same SSA alias

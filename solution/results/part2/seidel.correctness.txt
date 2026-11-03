@@ -1,0 +1,40 @@
+seidel rows=2 cols=2 tsteps=0 init=polybench-style
+  A PASS max_error=0 bit_identical=yes boundaries=unchanged
+seidel rows=2 cols=2 tsteps=0 init=mixed-sign
+  A PASS max_error=0 bit_identical=yes boundaries=unchanged
+seidel rows=2 cols=5 tsteps=3 init=polybench-style
+  A PASS max_error=0 bit_identical=yes boundaries=unchanged
+seidel rows=2 cols=5 tsteps=3 init=mixed-sign
+  A PASS max_error=0 bit_identical=yes boundaries=unchanged
+seidel rows=5 cols=2 tsteps=3 init=polybench-style
+  A PASS max_error=0 bit_identical=yes boundaries=unchanged
+seidel rows=5 cols=2 tsteps=3 init=mixed-sign
+  A PASS max_error=0 bit_identical=yes boundaries=unchanged
+seidel rows=3 cols=3 tsteps=1 init=polybench-style
+  A PASS max_error=0 bit_identical=yes boundaries=unchanged
+seidel rows=3 cols=3 tsteps=1 init=mixed-sign
+  A PASS max_error=0 bit_identical=yes boundaries=unchanged
+seidel rows=5 cols=5 tsteps=0 init=polybench-style
+  A PASS max_error=0 bit_identical=yes boundaries=unchanged
+seidel rows=5 cols=5 tsteps=0 init=mixed-sign
+  A PASS max_error=0 bit_identical=yes boundaries=unchanged
+seidel rows=5 cols=5 tsteps=1 init=polybench-style
+  A PASS max_error=0 bit_identical=yes boundaries=unchanged
+seidel rows=5 cols=5 tsteps=1 init=mixed-sign
+  A PASS max_error=0 bit_identical=yes boundaries=unchanged
+seidel rows=5 cols=5 tsteps=3 init=polybench-style
+  A PASS max_error=0 bit_identical=yes boundaries=unchanged
+seidel rows=5 cols=5 tsteps=3 init=mixed-sign
+  A PASS max_error=0 bit_identical=yes boundaries=unchanged
+seidel rows=8 cols=11 tsteps=4 init=polybench-style
+  A PASS max_error=0 bit_identical=yes boundaries=unchanged
+seidel rows=8 cols=11 tsteps=4 init=mixed-sign
+  A PASS max_error=0 bit_identical=yes boundaries=unchanged
+seidel rows=16 cols=16 tsteps=5 init=polybench-style
+  A PASS max_error=0 bit_identical=yes boundaries=unchanged
+seidel rows=16 cols=16 tsteps=5 init=mixed-sign
+  A PASS max_error=0 bit_identical=yes boundaries=unchanged
+seidel rows=30 cols=30 tsteps=20 init=polybench-style
+  A PASS max_error=0 bit_identical=yes boundaries=unchanged
+seidel rows=30 cols=30 tsteps=20 init=mixed-sign
+  A PASS max_error=0 bit_identical=yes boundaries=unchanged

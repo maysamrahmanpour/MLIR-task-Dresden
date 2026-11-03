@@ -21,12 +21,14 @@
 #include "llvm/Support/SourceMgr.h"
 #include "llvm/Support/ToolOutputFile.h"
 
+#include "Stencil/StencilDialect.h"
+#include "Stencil/StencilPasses.h"
 #include "Standalone/StandaloneDialect.h"
 #include "Standalone/StandaloneOpsDialect.cpp.inc"
 
 int main(int argc, char **argv) {
   mlir::registerAllPasses();
-  // TODO: Register standalone passes here.
+  mlir::stencil::registerStencilPasses();
 
   mlir::DialectRegistry registry;
   registry.insert<mlir::standalone::StandaloneDialect>();
@@ -35,7 +37,8 @@ int main(int argc, char **argv) {
   // Add the following to include *all* MLIR Core dialects, or selectively
   // include what you need like above. You only need to register dialects that
   // will be *parsed* by the tool, not generated.
-  // registerAllDialects(registry);
+  mlir::registerAllDialects(registry);
+  registry.insert<mlir::stencil::StencilDialect>();
 
   return mlir::asMainReturnCode(
       mlir::MlirOptMain(argc, argv, "Standalone optimizer driver\n", registry));

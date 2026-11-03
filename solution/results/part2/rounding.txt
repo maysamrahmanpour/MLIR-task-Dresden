@@ -1,0 +1,2 @@
+x=9: x/9=0x1p+0, x*(1/9)=0x1p+0
+counterexample x=7: division=0x1.8e38e38e38e39p-1 reciprocal-multiply=0x1.8e38e38e38e38p-1
